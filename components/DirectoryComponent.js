@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { FlatList } from 'react-native';
 import { ListItem } from 'react-native-elements';
-import { CAMPSITES } from '../shared/campsites'
+import { CAMPSITES } from '../shared/campsites';
 
 class Directory extends Component {
 
@@ -12,13 +12,13 @@ class Directory extends Component {
         };
     }
 
-    static navigationOptics = {
+    static navigationOptions = {
         title: 'Directory'
-    };
+    }
 
     render() {
         const { navigate } = this.props.navigation;
-        const renderDirectoryItem = ({item}) => {          
+        const renderDirectoryItem = ({item}) => {
             return (
                 <ListItem
                     title={item.name}
