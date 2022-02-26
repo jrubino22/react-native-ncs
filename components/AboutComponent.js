@@ -31,11 +31,11 @@ export default class About extends Component {
         const renderPartner = ({item}) => {
             return(
             <ListItem
-                item={item.name}
+                title={item.name}
                 subtitle={item.description}
                 leftAvatar={{ source: require('./images/bootstrap-logo.png')}}
             />
-            );
+            )
         }
 
         return(
